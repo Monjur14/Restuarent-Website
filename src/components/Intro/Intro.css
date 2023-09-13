@@ -47,3 +47,8 @@ video{
   
     min-height: 100vh;
 }
+@media (0px < width <= 650px) {
+    .intro{
+        display: none;
+    }
+}
