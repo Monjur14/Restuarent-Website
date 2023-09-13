@@ -123,3 +123,12 @@
         padding: 0rem 2rem 1rem;
     }
 }
+@media (0px < width <= 410px) {
+    .contact h1{
+        font-size: 1.5rem;
+        margin-top: -30px;
+    }
+    .input__div input{
+        width: 300px;
+    }
+}
