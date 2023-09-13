@@ -1,0 +1,134 @@
+.photos{
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+.left__content{
+    min-width: 500px;
+}
+.left__content h1{
+    margin-top: -25px;
+    margin-bottom: 15px;
+}
+.extra__p{
+    font-size: 14px;
+    color: #ffffffdd;
+    margin-bottom: 20px;
+}
+.right__content{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    position: relative;
+}
+.photo__img_container{
+    min-width: 200px;
+    height: 300px;
+    margin-right: 1rem;
+    position: relative;
+    /* z-index: 5; */
+}
+.photo__img_container:last-child{
+    margin-right: 0rem;
+}
+.photo__img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.right__content::-webkit-scrollbar{
+    display: none;
+    width: 0;
+    height: 0;
+    scrollbar-width: none;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0);
+    transition: 0.5s ease;
+    display: grid;
+    place-content: center;
+}
+.overlay:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.insta{
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+.overlay:hover .insta{
+    color: rgba(255, 255, 255, 1);
+}
+.arrow__icons{
+    position: absolute;
+    background-color: transparent;
+    min-width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem;
+    z-index: 5;
+}
+.arrow__icons span{
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.35rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    /* z-index: 10; */
+    cursor: pointer;
+}
+.arrow__left{
+    background-attachment: fixed;
+}
+@media (1600px <= width <= 2400px)  {
+    .arrow__icons{
+        display: none;
+    }
+    .photo__img_container{
+        min-width: 280px;
+        height: 380px;
+        margin-right: 1rem;
+        position: relative;
+        /* z-index: 5; */
+    }
+    .extra__p{
+        font-size: 20px;
+        color: #ffffffdd;
+        margin-bottom: 40px;
+    }
+}
+@media (0px < width <= 1150px) {
+    .photos{
+        flex-direction: column;
+        gap: 6rem;
+        justify-content: center;
+    }
+    .arrow__icons{
+        display: none;
+    }
+}
+@media (0px < width <= 650px) {
+    .photos{
+        gap: 4rem;
+    }
+    .left__content{
+        min-width: 300px;
+    }
+}

@@ -1,0 +1,23 @@
+.first__h1{
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    font-size: 85px;
+    letter-spacing: 0.2rem;
+    line-height: 6.3rem;
+}
+.first__p{
+    color: #ffffffc7;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    margin: 1rem 0rem;
+}
+@media (0px < width <= 650px) {
+    .first__h1{
+        font-size: 70px;
+        letter-spacing: 0.1rem;
+        line-height: 5.4rem;
+    }
+    .section__padding{
+        padding-top: 3rem;
+    }
+}

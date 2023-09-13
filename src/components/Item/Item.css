@@ -1,0 +1,18 @@
+.upper__div{
+    display: flex;
+    justify-content: space-between;
+}
+.Item{
+    margin-bottom: 1rem;
+}
+.empty{
+    height: 1px;
+    width: 70px;
+    background-color: #fff;
+}
+.upper__div_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
