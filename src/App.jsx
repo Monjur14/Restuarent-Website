@@ -15,8 +15,9 @@ function App() {
 
   return (
     <>
-      
-      <Navbar/>
+      <Headroom>
+        <Navbar/>
+      </Headroom>
       <Header/>
       <AboutUs/>
       <MenuItem/>
