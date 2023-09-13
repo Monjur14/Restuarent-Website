@@ -136,3 +136,11 @@
         margin-bottom: 3px;
     }
 }
+@media (0px < width <= 420px) {
+    .chef__info_top h1{
+        font-size: 2rem;
+    }
+    .chef__info__second{
+        margin-top: -10px;
+    }
+}
