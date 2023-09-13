@@ -21,3 +21,13 @@
         padding-top: 3rem;
     }
 }
+@media (0 < width <= 420px) {
+    .first__h1{
+        font-size: 55px;
+        line-height: 5.2rem;
+        margin-top: -10px;
+    }
+    .section__padding{
+        padding-top: 1.5rem;
+    }
+}

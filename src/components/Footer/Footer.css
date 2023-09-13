@@ -110,7 +110,7 @@
     .input__div{
         display: flex;
         flex-direction: column;
-        
+        margin-left: 14px;
         align-items: center;
     }
     .input__div button{
@@ -130,5 +130,8 @@
     }
     .input__div input{
         width: 300px;
+    }
+    .input__div{
+        margin-left: 17px;
     }
 }
